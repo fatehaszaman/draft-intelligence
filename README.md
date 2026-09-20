@@ -4,8 +4,6 @@
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue?logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![Coverage](https://img.shields.io/badge/coverage-87%25-yellowgreen)
 ![NFL Data](https://img.shields.io/badge/data-nfl--data--py-orange)
 
 **NFL Draft outcome prediction and player evaluation engine.** Predicts draft order, team-pick fits, and career success probability using combine biometrics, college production, positional scarcity, team need scoring, historical comp analysis, and social/commercial value signals.
@@ -76,24 +74,34 @@
 | `scouting/historical_comps.py` | KNN comp finder over 60+ historical prospects, career outcome probabilities |
 | `teams/team_needs.py` | 2026 team need scores, scheme fit, mock draft slot predictions |
 | `teams/cap_space.py` | 2026 cap space data, rookie slot costs, positional spending history |
-| `valuation/draft_board.py` | Composite grading engine, big board generator, full mock draft |
-| `data/nfl_data_client.py` | `nfl-data-py` integration with hardcoded fallback |
+| `teams/trade_value_calculator.py` | Pick-value lookup and trade-package comparison |
+
+The integrated draft-board runner and NFL data client are not implemented in
+this checkout. The architecture and big-board mockup describe the intended
+integration, not a working end-to-end command.
 
 ---
 
 ## Quickstart
 
 ```bash
-# Clone and install
-git clone https://github.com/yourusername/draft-intelligence.git
+# Clone and create an isolated environment (macOS/Linux)
+git clone https://github.com/fatehaszaman/draft-intelligence.git
 cd draft-intelligence
-pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
 
-# Run the demo
-python examples/run_draft_board.py
+# Offline example: uses the standard library only
+python -c "from teams.trade_value_calculator import evaluate_trade; print(evaluate_trade([9], [16, 49, 82]))"
+
+# Optional dependencies for the other analysis modules
+python -m pip install -r requirements.txt
 ```
 
 ### Sample Output
+
+The following big-board table is an illustrative mockup, not output from the
+offline trade example above. No integrated big-board runner is shipped.
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
@@ -250,9 +258,9 @@ ROUNDS_TO_SIMULATE = 3
 
 ## Testing
 
-```bash
-pytest tests/ -v
-```
+The `tests/` directory currently contains scaffolding, not executable test
+cases. No passing-build or coverage percentage is claimed; the offline
+quickstart is a smoke check only, not a validated prediction benchmark.
 
 ---
 
