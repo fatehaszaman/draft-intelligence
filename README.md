@@ -55,7 +55,7 @@
 │   ┌──────────────────────┐       ┌────────────────────────────────┐  │
 │   │   Ranked Big Board   │       │   Team Fit Scores + Mock Draft  │ │
 │   │                      │       │                                │  │
-│   │  #1  Cam Ward  QB  97│       │  NE @ #4: Cam Ward (QB) 94.2  │  │
+│   │  #1  Cam Ward  QB  97│       │  NE @ #4: W. Campbell (OT) 90 │  │
 │   │  #2  Travis Hunter 95│       │  NYG @ #3: Travis Hunter 91.7 │  │
 │   │  #3  Abdul Carter 93 │       │  TEN @ #1: Cam Ward (QB) 96.8 │  │
 │   │  ...                 │       │  ...                          │  │
@@ -101,16 +101,18 @@ python -m pip install -r requirements.txt
 ### Sample Output
 
 The following big-board table is an illustrative mockup, not output from the
-offline trade example above. No integrated big-board runner is shipped.
+offline trade example above. No integrated big-board runner is shipped. It uses
+the 2025 draft class as a retrospective example; these players were drafted in
+April 2025, so it is not a current prospect ranking.
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
-║               DRAFT INTELLIGENCE — 2026 BIG BOARD               ║
+║               DRAFT INTELLIGENCE — 2025 CLASS (EX.)              ║
 ╠════╦══════════════════╦═════╦════════╦═══════╦═══════╦══════════╣
 ║ RK ║ PLAYER           ║ POS ║ SCHOOL ║ COMB  ║ PROD  ║ OVERALL  ║
 ╠════╬══════════════════╬═════╬════════╬═══════╬═══════╬══════════╣
 ║  1 ║ Cam Ward         ║ QB  ║ Miami  ║ 78.4  ║ 91.2  ║  94.8    ║
-║  2 ║ Travis Hunter    ║ CB  ║ Col St ║ 95.1  ║ 96.3  ║  93.6    ║
+║  2 ║ Travis Hunter    ║ CB  ║ Colo   ║ 95.1  ║ 96.3  ║  93.6    ║
 ║  3 ║ Abdul Carter     ║ EDGE║ Penn St║ 96.7  ║ 89.4  ║  92.1    ║
 ║  4 ║ Will Campbell    ║ OT  ║ LSU    ║ 82.3  ║ 88.6  ║  90.4    ║
 ║  5 ║ Mason Graham     ║ DT  ║ Mich   ║ 88.9  ║ 87.1  ║  89.7    ║
@@ -121,7 +123,7 @@ offline trade example above. No integrated big-board runner is shipped.
 ║ 10 ║ Mykel Williams   ║ EDGE║ Georgia║ 89.6  ║ 82.8  ║  85.1    ║
 ╚════╩══════════════════╩═════╩════════╩═══════╩═══════╩══════════╝
 
-2026 MOCK DRAFT — ROUND 1 (First 10 Picks)
+ILLUSTRATIVE MOCK DRAFT, 2025 CLASS — ROUND 1 (First 10 Picks)
 ─────────────────────────────────────────────────────────────────
 Pick  1 │ TEN  │ Cam Ward         QB   │ Fit: 97.1 │ Value: FAIR
 Pick  2 │ CLE  │ Travis Hunter    CB   │ Fit: 88.4 │ Value: STEAL
@@ -266,4 +268,4 @@ quickstart is a smoke check only, not a validated prediction benchmark.
 
 ## License
 
-MIT © 2026 draft-intelligence contributors
+MIT © 2026 Fateha Zaman. See [LICENSE](LICENSE).
