@@ -107,7 +107,7 @@ April 2025, so it is not a current prospect ranking.
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
-║               DRAFT INTELLIGENCE — 2025 CLASS (EX.)              ║
+║               DRAFT INTELLIGENCE - 2025 CLASS (EX.)              ║
 ╠════╦══════════════════╦═════╦════════╦═══════╦═══════╦══════════╣
 ║ RK ║ PLAYER           ║ POS ║ SCHOOL ║ COMB  ║ PROD  ║ OVERALL  ║
 ╠════╬══════════════════╬═════╬════════╬═══════╬═══════╬══════════╣
@@ -123,7 +123,7 @@ April 2025, so it is not a current prospect ranking.
 ║ 10 ║ Mykel Williams   ║ EDGE║ Georgia║ 89.6  ║ 82.8  ║  85.1    ║
 ╚════╩══════════════════╩═════╩════════╩═══════╩═══════╩══════════╝
 
-ILLUSTRATIVE MOCK DRAFT, 2025 CLASS — ROUND 1 (First 10 Picks)
+ILLUSTRATIVE MOCK DRAFT, 2025 CLASS - ROUND 1 (First 10 Picks)
 ─────────────────────────────────────────────────────────────────
 Pick  1 │ TEN  │ Cam Ward         QB   │ Fit: 97.1 │ Value: FAIR
 Pick  2 │ CLE  │ Travis Hunter    CB   │ Fit: 88.4 │ Value: STEAL
@@ -183,7 +183,7 @@ trajectory = cps.career_trajectory([
 
 # Breakout age
 age = cps.breakout_age([...])
-# → 19  (broke out as true freshman — excellent signal)
+# → 19  (broke out as true freshman - excellent signal)
 ```
 
 ### TeamNeedScorer
