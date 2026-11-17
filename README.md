@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![NFL Data](https://img.shields.io/badge/data-nfl--data--py-orange)
 
-**NFL Draft outcome prediction and player evaluation engine.** Predicts draft order, team-pick fits, and career success probability using combine biometrics, college production, positional scarcity, team need scoring, historical comp analysis, and social/commercial value signals.
+**NFL player-evaluation modules with an illustrative 2025 board.** The modules cover combine biometrics, college production, positional scarcity, team need scoring, historical comp analysis, and social/commercial value signals.
 
 ---
 
